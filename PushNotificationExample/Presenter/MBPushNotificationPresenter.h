@@ -21,6 +21,8 @@ typedef void (^MPPresenterCompletion)(void);
 
 -(void)presentNotificationView:(NSString *)view withNotification:(MBPushNotificationModel *)notification completionHandler:(MPPresenterCompletion)presenterCompletion;
 -(void)hideView:(UIView *)view;
+-(void)hideViewFromSwipe:(UIView *)view;
+-(void)showViewFromSwipe:(UIView *)view;
 -(void)finishPresentingView;
 
 @end

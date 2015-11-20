@@ -70,17 +70,19 @@
         _firstX = [self center].x;
         _firstY = [self center].y;
     }
-    NSLog(@"first %f", _firstY);
+
+    CGFloat smoth = 0.8;
+    CGFloat newCenterY = _firstY + (translatedPoint.y*smoth);
     
     if ([recognizer state] == UIGestureRecognizerStateEnded) {
-        self.presenter.stopAutoHiding = NO;
-        [self.presenter hideView:self];
+        if (newCenterY > 40) {
+            [self.presenter showViewFromSwipe:self];
+        } else {
+            [self.presenter hideViewFromSwipe:self];
+        }
+        return;
     }
-    
-    
-    CGFloat velocity = 0.8;
-    CGFloat newCenterY = _firstY + (translatedPoint.y*velocity);
-    
+
     if (newCenterY > self.frame.size.height/2.0) {
         newCenterY = self.frame.size.height/2.0;
     }
@@ -90,11 +92,20 @@
     [self setCenter:translatedPoint];
 }
 
+#pragma mark -touch
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //self.presenter.stopAutoHiding = YES;
+}
+
+
 #pragma mark - UIGestureRecognizerDelegate
 
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
     return YES;
 }
+
 
 @end

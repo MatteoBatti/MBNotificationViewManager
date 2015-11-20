@@ -50,10 +50,11 @@
 {
     self.presentingView.alpha = 1.0;
     [UIView animateWithDuration:0.2 animations:^{
+        self.stopAutoHiding = NO;
         self.presentingView.frame = CGRectMake(0, 0, self.presentingView.frame.size.width, self.presentingView.frame.size.height);
     } completion:^(BOOL finished) {
         if (finished) {
-            //[self performSelector:@selector(hideView:) withObject:self.presentingView afterDelay:2];
+            [self performSelector:@selector(hideView:) withObject:self.presentingView afterDelay:1.0];
         }
     }];
 }
@@ -63,16 +64,44 @@
     if (!self.stopAutoHiding && [self.presentingView isEqual:view]) {
         [self.presentingView setCenter:view.center];
         [UIView animateWithDuration:0.2 animations:^{
-            self.presentingView.frame = CGRectMake(0, -self.presentingView.frame.size.height , self.presentingView.frame.size.width, self.presentingView.frame.size.height);
+            view.frame = CGRectMake(0, - self.presentingView.frame.size.height , self.presentingView.frame.size.width, self.presentingView.frame.size.height);
         } completion:^(BOOL finished) {
             if (finished) {
-                self.presentingView.alpha = 0.0;
+                view.alpha = 0.0;
                 if (self.completion) {
                     self.completion();
                     self.completion = nil;
                 }
             }
         }];
+    }
+}
+
+-(void)hideViewFromSwipe:(UIView *)view;
+{
+    if ([self.presentingView isEqual:view]) {
+        [self.presentingView setCenter:view.center];
+        [UIView animateWithDuration:0.1 animations:^{
+            view.frame = CGRectMake(0, - self.presentingView.frame.size.height , self.presentingView.frame.size.width, self.presentingView.frame.size.height);
+        } completion:^(BOOL finished) {
+            if (finished) {
+                view.alpha = 0.0;
+                if (self.completion) {
+                    self.completion();
+                    self.completion = nil;
+                }
+            }
+        }];
+    }
+}
+
+-(void)showViewFromSwipe:(UIView *)view;
+{
+    if ([self.presentingView isEqual:view]) {
+        [self.presentingView setCenter:view.center];
+        [UIView animateWithDuration:0.1 animations:^{
+            view.frame = CGRectMake(0, 0 , self.presentingView.frame.size.width, self.presentingView.frame.size.height);
+        } completion:nil];
     }
 }
 
