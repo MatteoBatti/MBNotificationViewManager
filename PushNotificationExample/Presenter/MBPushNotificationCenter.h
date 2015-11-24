@@ -15,6 +15,10 @@
 @property (nonatomic, strong) NSString *viewNotificationClass;
 
 +(instancetype)sharedInstance;
+
 -(void)presentPushNotificationWithTapHandler:(NSDictionary *)notification tapCompletionHandler:(MBNotificationViewTapHandler)tapHandler;
+
+-(void)presentPushNotificationWithModel:(MBPushNotificationModel *)notification_model tapCompletionHandler:(MBNotificationViewTapHandler)tapHandler;
+
 
 @end

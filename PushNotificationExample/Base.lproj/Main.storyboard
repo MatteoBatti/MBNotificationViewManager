@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,6 +20,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-P2-a1r">
                                 <rect key="frame" x="283" y="285" width="35" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="Gdb-y4-Cva"/>
                                     <constraint firstAttribute="height" constant="30" id="RqW-QA-plB"/>
@@ -28,12 +30,29 @@
                                     <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1e-Uv-DUN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0C-Z7-qPv">
+                                <rect key="frame" x="256" y="323" width="89" height="30"/>
+                                <animations/>
+                                <state key="normal" title="custom push"/>
+                                <connections>
+                                    <action selector="customPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGS-si-SuE"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Y0C-Z7-qPv" firstAttribute="centerX" secondItem="ViO-P2-a1r" secondAttribute="centerX" id="0SH-Gz-9UN"/>
+                            <constraint firstItem="Y0C-Z7-qPv" firstAttribute="top" secondItem="ViO-P2-a1r" secondAttribute="bottom" constant="8" id="OtO-RV-qyW"/>
                             <constraint firstItem="ViO-P2-a1r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QLm-kg-Clh"/>
+                            <constraint firstItem="Y0C-Z7-qPv" firstAttribute="width" secondItem="ViO-P2-a1r" secondAttribute="height" multiplier="23:15" id="qvt-PQ-Lsh"/>
                             <constraint firstItem="ViO-P2-a1r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uU3-Qj-uzF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qvt-PQ-Lsh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

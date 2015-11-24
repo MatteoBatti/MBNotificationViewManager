@@ -50,7 +50,12 @@
 {
     MBPushNotificationModel *newNot = [MBPushNotificationModel createFromNotificationInfo:notification andTapHandler:tapHandler];
     [self enqueueNotification:newNot];
-    
+}
+
+-(void)presentPushNotificationWithModel:(MBPushNotificationModel *)notification_model tapCompletionHandler:(MBNotificationViewTapHandler)tapHandler;
+{
+    notification_model.tapHandler = tapHandler;
+    [self enqueueNotification:notification_model];
 }
 
 -(void)enqueueNotification:(MBPushNotificationModel *)notification

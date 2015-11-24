@@ -14,7 +14,7 @@
 {
     [super fillFromNotificationInfo:notificationUserInfo];
     //
-    self.myCustomPayloadValue = notificationUserInfo[@"myCustomPayloadValue"];
+    self.myCustomPayloadValue = notificationUserInfo[@"aps"][@"myCustomPayloadValue"];
 }
 
 -(void)dealloc

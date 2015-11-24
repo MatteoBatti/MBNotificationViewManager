@@ -19,6 +19,8 @@
 		95386B851BDFDE1E003A9B40 /* MBPushNotificationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95386B7E1BDFDE1E003A9B40 /* MBPushNotificationPresenter.m */; };
 		95386B861BDFDE1E003A9B40 /* MBPushNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95386B801BDFDE1E003A9B40 /* MBPushNotificationView.m */; };
 		95386B871BDFDE1E003A9B40 /* MBPushNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95386B811BDFDE1E003A9B40 /* MBPushNotificationView.xib */; };
+		95C94D5C1C04B3C400AE6315 /* MyCustomNotificationViewClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C94D5B1C04B3C400AE6315 /* MyCustomNotificationViewClass.xib */; };
+		95C94D5F1C04B3EA00AE6315 /* MyCustomNotificationViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C94D5E1C04B3EA00AE6315 /* MyCustomNotificationViewClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		95386B7F1BDFDE1E003A9B40 /* MBPushNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPushNotificationView.h; sourceTree = "<group>"; };
 		95386B801BDFDE1E003A9B40 /* MBPushNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPushNotificationView.m; sourceTree = "<group>"; };
 		95386B811BDFDE1E003A9B40 /* MBPushNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBPushNotificationView.xib; sourceTree = "<group>"; };
+		95C94D5B1C04B3C400AE6315 /* MyCustomNotificationViewClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomNotificationViewClass.xib; sourceTree = "<group>"; };
+		95C94D5D1C04B3EA00AE6315 /* MyCustomNotificationViewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomNotificationViewClass.h; sourceTree = "<group>"; };
+		95C94D5E1C04B3EA00AE6315 /* MyCustomNotificationViewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomNotificationViewClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				95386B7F1BDFDE1E003A9B40 /* MBPushNotificationView.h */,
 				95386B801BDFDE1E003A9B40 /* MBPushNotificationView.m */,
 				95386B811BDFDE1E003A9B40 /* MBPushNotificationView.xib */,
+				95C94D5D1C04B3EA00AE6315 /* MyCustomNotificationViewClass.h */,
+				95C94D5E1C04B3EA00AE6315 /* MyCustomNotificationViewClass.m */,
+				95C94D5B1C04B3C400AE6315 /* MyCustomNotificationViewClass.xib */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95386B871BDFDE1E003A9B40 /* MBPushNotificationView.xib in Resources */,
+				95C94D5C1C04B3C400AE6315 /* MyCustomNotificationViewClass.xib in Resources */,
 				95386B6F1BDFDC54003A9B40 /* LaunchScreen.storyboard in Resources */,
 				95386B6C1BDFDC54003A9B40 /* Assets.xcassets in Resources */,
 				95386B6A1BDFDC54003A9B40 /* Main.storyboard in Resources */,
@@ -191,6 +200,7 @@
 				95386B851BDFDE1E003A9B40 /* MBPushNotificationPresenter.m in Sources */,
 				95386B671BDFDC54003A9B40 /* ViewController.m in Sources */,
 				95386B861BDFDE1E003A9B40 /* MBPushNotificationView.m in Sources */,
+				95C94D5F1C04B3EA00AE6315 /* MyCustomNotificationViewClass.m in Sources */,
 				95386B641BDFDC54003A9B40 /* AppDelegate.m in Sources */,
 				95386B831BDFDE1E003A9B40 /* MBPushNotificationModel.m in Sources */,
 				95386B611BDFDC54003A9B40 /* main.m in Sources */,
@@ -344,6 +354,7 @@
 				95386B751BDFDC54003A9B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
