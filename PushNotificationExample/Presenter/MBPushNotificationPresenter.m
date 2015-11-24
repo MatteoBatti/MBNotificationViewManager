@@ -31,7 +31,6 @@
     if (!pushNotificationView) {
         pushNotificationView = [NSClassFromString(view) new];
     }
-    
     if (pushNotificationView) {
         
         self.presentingView = pushNotificationView;
@@ -68,6 +67,7 @@
         } completion:^(BOOL finished) {
             if (finished) {
                 view.alpha = 0.0;
+                [view removeFromSuperview];
                 if (self.completion) {
                     self.completion();
                     self.completion = nil;
@@ -86,6 +86,7 @@
         } completion:^(BOOL finished) {
             if (finished) {
                 view.alpha = 0.0;
+                [view removeFromSuperview];
                 if (self.completion) {
                     self.completion();
                     self.completion = nil;
@@ -108,6 +109,7 @@
 -(void)finishPresentingView;
 {
     self.presentingView.alpha = 0.0;
+    [self.presentingView removeFromSuperview];
     if (self.completion) {
         self.completion();
         self.completion = nil;

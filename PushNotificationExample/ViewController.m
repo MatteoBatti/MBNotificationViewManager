@@ -10,13 +10,16 @@
 #import "MBPushNotificationCenter.h"
 
 @interface ViewController ()
-
+{
+    NSUInteger counter;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    counter = 0;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,13 +30,17 @@
 
 - (IBAction)push:(id)sender {
     
-    NSDictionary *not = @{ @"aps" : @{@"alert": @"prova titolo"}};
+    
+    NSString *msg = [NSString stringWithFormat:@"push view n. %li", counter];
+    NSDictionary *not = @{ @"aps" : @{@"alert": msg}};
     
     __weak ViewController *weakSelf = self;
     
     [[MBPushNotificationCenter sharedInstance] presentPushNotificationWithTapHandler:not tapCompletionHandler:^{
         [weakSelf tapNotification];
     }];
+    
+    counter ++;
     
 }
 
