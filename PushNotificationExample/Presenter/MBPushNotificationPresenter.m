@@ -8,6 +8,9 @@
 
 #import "MBPushNotificationPresenter.h"
 #import "MBPushNotificationView.h"
+#import "MBPushNotificationUtils.h"
+
+
 @interface MBPushNotificationPresenter()
 {
     UIView *_currentPresentingView;
@@ -38,7 +41,8 @@
         [pushNotificationView populateViewWithNotification:notification presenter:self];
         
         pushNotificationView.alpha = 0.0;
-        pushNotificationView.frame = CGRectMake(0, -pushNotificationView.frame.size.height, pushNotificationView.frame.size.width, pushNotificationView.frame.size.height);
+        pushNotificationView.frame = CGRectMake(0, -pushNotificationView.frame.size.height, [UIScreen mainScreen].bounds.size.width, pushNotificationView.frame.size.height);
+        
         [[UIApplication sharedApplication].keyWindow addSubview:pushNotificationView];
         [self showView];
     }

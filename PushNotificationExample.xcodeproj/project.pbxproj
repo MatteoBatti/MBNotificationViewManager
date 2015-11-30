@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951ED5CC1C0C65290068D205 /* MBPushNotificationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 951ED5CB1C0C65290068D205 /* MBPushNotificationUtils.m */; };
 		95386B611BDFDC54003A9B40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95386B601BDFDC54003A9B40 /* main.m */; };
 		95386B641BDFDC54003A9B40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95386B631BDFDC54003A9B40 /* AppDelegate.m */; };
 		95386B671BDFDC54003A9B40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95386B661BDFDC54003A9B40 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		951ED5CA1C0C65290068D205 /* MBPushNotificationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPushNotificationUtils.h; sourceTree = "<group>"; };
+		951ED5CB1C0C65290068D205 /* MBPushNotificationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPushNotificationUtils.m; sourceTree = "<group>"; };
 		95386B5C1BDFDC54003A9B40 /* PushNotificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95386B601BDFDC54003A9B40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95386B621BDFDC54003A9B40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 		95386B761BDFDE1E003A9B40 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				951ED5CA1C0C65290068D205 /* MBPushNotificationUtils.h */,
+				951ED5CB1C0C65290068D205 /* MBPushNotificationUtils.m */,
 				95386B771BDFDE1E003A9B40 /* MBPushNotificationCenter.h */,
 				95386B781BDFDE1E003A9B40 /* MBPushNotificationCenter.m */,
 				95386B791BDFDE1E003A9B40 /* MBPushNotificationModel.h */,
@@ -200,6 +205,7 @@
 				95386B851BDFDE1E003A9B40 /* MBPushNotificationPresenter.m in Sources */,
 				95386B671BDFDC54003A9B40 /* ViewController.m in Sources */,
 				95386B861BDFDE1E003A9B40 /* MBPushNotificationView.m in Sources */,
+				951ED5CC1C0C65290068D205 /* MBPushNotificationUtils.m in Sources */,
 				95C94D5F1C04B3EA00AE6315 /* MyCustomNotificationViewClass.m in Sources */,
 				95386B641BDFDC54003A9B40 /* AppDelegate.m in Sources */,
 				95386B831BDFDE1E003A9B40 /* MBPushNotificationModel.m in Sources */,

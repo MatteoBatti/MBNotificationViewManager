@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXJ-g6-6gK">
-                    <rect key="frame" x="0.0" y="46" width="320" height="20"/>
+                    <rect key="frame" x="8" y="46" width="304" height="20"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldCond" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -33,7 +33,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glq-Lk-ZKg">
-                    <rect key="frame" x="0.0" y="18" width="320" height="20"/>
+                    <rect key="frame" x="8" y="18" width="304" height="20"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldCond" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -45,13 +45,13 @@
             <constraints>
                 <constraint firstItem="VDa-jP-MrI" firstAttribute="top" secondItem="Glq-Lk-ZKg" secondAttribute="bottom" constant="1.5" id="2B8-Ru-BEg"/>
                 <constraint firstAttribute="trailing" secondItem="VDa-jP-MrI" secondAttribute="trailing" id="B0C-FI-YPu"/>
-                <constraint firstAttribute="trailing" secondItem="Glq-Lk-ZKg" secondAttribute="trailing" id="ERC-Ja-Uzx"/>
-                <constraint firstItem="Glq-Lk-ZKg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JbG-jc-5BC"/>
+                <constraint firstAttribute="trailing" secondItem="Glq-Lk-ZKg" secondAttribute="trailing" constant="8" id="ERC-Ja-Uzx"/>
+                <constraint firstItem="Glq-Lk-ZKg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="JbG-jc-5BC"/>
                 <constraint firstItem="VDa-jP-MrI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TTJ-4c-XD8"/>
                 <constraint firstItem="EXJ-g6-6gK" firstAttribute="top" secondItem="VDa-jP-MrI" secondAttribute="bottom" constant="1.5" id="fB2-Mg-JoQ"/>
-                <constraint firstAttribute="trailing" secondItem="EXJ-g6-6gK" secondAttribute="trailing" id="jzO-gq-bSR"/>
+                <constraint firstAttribute="trailing" secondItem="EXJ-g6-6gK" secondAttribute="trailing" constant="8" id="jzO-gq-bSR"/>
                 <constraint firstItem="VDa-jP-MrI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nIS-hH-Nlq"/>
-                <constraint firstItem="EXJ-g6-6gK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zKc-5s-hkv"/>
+                <constraint firstItem="EXJ-g6-6gK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="zKc-5s-hkv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

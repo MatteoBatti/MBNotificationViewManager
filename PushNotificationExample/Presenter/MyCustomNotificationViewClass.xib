@@ -18,34 +18,57 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqX-2D-1Vm">
-                    <rect key="frame" x="39" y="38" width="320" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqX-2D-1Vm">
+                    <rect key="frame" x="8" y="38" width="320" height="20"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldCond" family="Helvetica Neue" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn5-DA-Azm">
-                    <rect key="frame" x="39" y="10" width="320" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn5-DA-Azm">
+                    <rect key="frame" x="8" y="8" width="320" height="20"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldCond" family="Helvetica Neue" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="prova" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-16-emi">
-                    <rect key="frame" x="39" y="67" width="320" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="prova" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-16-emi">
+                    <rect key="frame" x="8" y="68" width="320" height="20"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldCond" family="Helvetica Neue" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qt3-Mj-Y54">
+                    <rect key="frame" x="542" y="23" width="50" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="72c-57-c06"/>
+                        <constraint firstAttribute="height" constant="50" id="i7a-pK-AcV"/>
+                    </constraints>
+                </view>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qt3-Mj-Y54" secondAttribute="trailing" constant="8" id="3Kb-d1-e3G"/>
+                <constraint firstItem="MqX-2D-1Vm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="4ry-Xe-Bc1"/>
+                <constraint firstItem="TqL-16-emi" firstAttribute="top" secondItem="MqX-2D-1Vm" secondAttribute="bottom" constant="10" id="DiZ-qY-Wcc"/>
+                <constraint firstItem="TqL-16-emi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="INF-aX-qCN"/>
+                <constraint firstAttribute="bottom" secondItem="Qt3-Mj-Y54" secondAttribute="bottom" constant="23" id="IRX-jm-IwP"/>
+                <constraint firstItem="MqX-2D-1Vm" firstAttribute="width" secondItem="Zn5-DA-Azm" secondAttribute="width" id="Iea-pn-gNM"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zn5-DA-Azm" secondAttribute="trailing" constant="272" id="N7Z-KP-mQP"/>
+                <constraint firstItem="Zn5-DA-Azm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ONH-wL-IGL"/>
+                <constraint firstItem="MqX-2D-1Vm" firstAttribute="top" secondItem="Zn5-DA-Azm" secondAttribute="bottom" constant="10" id="Qps-J7-Ib2"/>
+                <constraint firstItem="TqL-16-emi" firstAttribute="width" secondItem="Zn5-DA-Azm" secondAttribute="width" id="hKh-hP-XEG"/>
+                <constraint firstItem="Qt3-Mj-Y54" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="n3O-yv-3SD"/>
+                <constraint firstItem="Zn5-DA-Azm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qbs-a9-NhD"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="info" destination="MqX-2D-1Vm" id="hiB-RQ-BEl"/>
                 <outlet property="myCustomValue" destination="TqL-16-emi" id="mQ2-KX-BaC"/>
                 <outlet property="title" destination="Zn5-DA-Azm" id="qMV-kU-Kzf"/>
             </connections>
-            <point key="canvasLocation" x="220" y="142"/>
+            <point key="canvasLocation" x="185" y="84"/>
         </view>
     </objects>
 </document>
